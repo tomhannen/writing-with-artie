@@ -1,0 +1,207 @@
+var unit = 10; 
+var step; 
+var rev = "reverse";
+var i;
+
+var str = "O"; /// string to write!
+var res;   // variable to hold single character of string
+var symbol;
+
+function pythag(a,b,direction) {
+    var a2 = Math.pow((a * unit),2);
+    var b2 = Math.pow((b * unit),2); 
+    var hypo = Math.sqrt(a2+b2);
+    if(direction == rev){
+        artie.back(hypo); 
+    }else{
+      artie.forward(hypo);  
+    }
+}
+
+// letters
+function write(symbol) {
+
+    if (symbol === "A") {
+        artie.penup(); artie.right(20.6); 
+        artie.pendown(); pythag(3,8); artie.right(138.8); pythag(3,8); artie.penup(); artie.right(180); 
+        pythag(3,1); artie.left(69.4); artie.pendown(); artie.forward(unit * 4); artie.penup(); 
+        artie.back(unit * 4); artie.right (69.4); pythag(3,1,rev); artie.right(20.6);
+        } else if (symbol === "B") {
+            artie.forward(unit * 4); artie.pendown();
+            artie.forward(unit * 4); artie.right(90); artie.forward(unit * 3);
+            artie.right(45); pythag(1,1); artie.right(22.5); pythag(0.4,1);
+            artie.right(45); pythag(0.4,1); artie.right(22.5); pythag(1,1);
+            artie.left(108.4); pythag(0.5,1); artie.right(45); pythag(1.5,.5);
+            artie.right(36.8); pythag(1.5,.5); artie.right(36.8); pythag(1,.5);
+            artie.right(34.5); artie.forward(unit * 3.05); artie.right(90); 
+            artie.forward(unit * 4.1); artie.right(90); artie.forward(unit * 3); artie.penup();
+            artie.forward (unit * 1.5); artie.left(90);artie.back(unit * 4);   
+            } else if (symbol === "C") {
+                artie.penup(); artie.right(90); artie.forward(unit * 6); artie.left(90);
+                artie.forward(unit * 7.5); artie.left(63.4); artie.pendown();
+                pythag(0.5,1); artie.left(26.6); artie.forward(unit * 2);
+                for(step = 0; step < 2; step++){
+                    artie.left(26.6); pythag(2,1); artie.left(36.8); pythag(2,1);
+                    artie.left(26.6); artie.forward(unit * 2);  
+                    }
+                artie.left(26.6); pythag(0.5,1); artie.penup();
+                artie.left (36.8+26.8); artie.back(unit * 0.5);
+                } else if (symbol === "D") {
+                    artie.penup(); 
+                    artie.forward(unit * 7.9); 
+                    artie.right(90); 
+                    artie.pendown();
+                    artie.forward(unit * 2.5); artie.right(26.6); pythag(2,1); 
+                    artie.right(18.4); pythag(1,1);artie.right(31); pythag(2,0.5); artie.right(28); 
+                    pythag(2,0.5); artie.right(31); pythag(1,1); artie.right(18.4); pythag(2,1);
+                    artie.right(26.7); artie.forward(unit * 2.5); artie.right(90); 
+                    artie.forward(unit * 7.9); artie.penup();
+                    artie.back(unit*7.9);
+                    artie.right(90);
+                    artie.forward(unit *6);
+                    artie.left(90);
+                } else if (symbol === "E") {
+                    artie.penup(); artie.right(90); artie.forward(unit * 5); artie.left(90);
+                    artie.forward(unit * 8); artie.left(90); artie.pendown();
+                    artie.forward(unit * 5); artie.left(90); artie.forward(unit * 8); 
+                    artie.left(90); artie.forward(unit * 5); artie.penup(); 
+                    artie.left(90); artie.forward(unit * 4); artie.left(90); artie.forward(unit);
+                    artie.pendown(); artie.forward(unit * 4); artie.penup();
+                    artie.right(180);                     // PEN RESET
+                    artie.forward(unit * 5);
+                    artie.left(90);
+                    artie.back(unit * 4);
+                    } else if (symbol === "F") {
+                        artie.penup(); artie.right(90); artie.forward(unit * 5); artie.left(90);
+                        artie.forward(unit * 8); artie.left(90); artie.pendown();
+                        artie.forward(unit * 5); artie.left(90); artie.forward(unit * 8); 
+                        artie.penup(); artie.back(unit * 4); artie.pendown(); artie.left (90); artie.forward(unit * 4); 
+                        artie.penup(); artie.forward(unit * 1); artie.left(90); artie.back(unit * 4); 
+                            } else if (symbol === "G") {
+                                artie.penup(); artie.right(90); artie.forward(unit * 6); artie.left(90);
+                                artie.forward(unit * 7.5); artie.left(63.4); artie.pendown();
+                                pythag(0.5,1); artie.left(26.6); artie.forward(unit * 2);
+                                for(step = 0; step < 2; step++){
+                                    artie.left(26.6); pythag(2,1); artie.left(36.8); pythag(2,1);
+                                    artie.left(26.6); artie.forward(unit * 2);  
+                                    }
+                                artie.left(26.6); pythag(0.5,1); artie.left(63.4); 
+                                artie.forward(unit * 3.5); artie.left(90);
+                                artie.forward(unit * 2); artie.penup();
+                                artie.back (unit * 2); artie.right (90); artie.back(unit * 4);
+                                } else if (symbol === "H") {
+                                    artie.penup(); artie.right(90); artie.forward(unit * 5); artie.left(90); artie.forward(unit * 8); artie.pendown();
+                                    artie.right(180); artie.forward(unit * 8); artie.penup(); 
+                                    artie.right(90); artie.forward(unit * 5); artie.pendown();
+                                    artie.right(90); artie.forward(unit * 8); artie.penup(); 
+                                    artie.back(unit * 4); artie.right(90); 
+                                    artie.pendown(); artie.forward(unit * 5); artie.penup(); artie.left(90); artie.back(unit * 4);
+                                        }else if (symbol === "K") {
+                                        artie.pendown();
+                                        artie.forward(unit * 8); artie.penup(); artie.right(90); artie.forward(unit * 5);
+                                        artie.right(141.3); artie.pendown(); pythag(4.9,4); 
+                                        artie.left(102.6); 
+                                        pythag(5,4); artie.penup();
+                                        artie.left(141.3-102.6+90);
+                                        } else if (symbol === "L") {
+                                            artie.pendown();
+                                            artie.forward(unit * 8); artie.penup();
+                                            artie.back(unit * 8);
+                                            artie.right(90);
+                                            artie.pendown(); artie.forward(unit * 4);
+                                            artie.penup();
+                                            artie.left(90);
+                                            } else if (symbol === "M") {
+                                                artie.pendown();
+                                                artie.forward(unit * 8); artie.penup(); artie.right(153.4); artie.pendown(); pythag(4,7); artie.penup();
+                                                artie.left(126.8); artie.pendown(); pythag(4,7); artie.penup(); artie.right(153.4); artie.pendown(); 
+                                                artie.forward(unit * 8); artie.penup();
+                                                // PEN RESET
+                                                artie.left(180);
+                                            } else if (symbol === "N") {
+                                                    artie.pendown();
+                                                    artie.forward(unit * 8); 
+                                                    artie.penup(); artie.right(143.1); artie.pendown();
+                                                    pythag(6,8);
+                                                    artie.penup(); artie.left(143.1); artie.pendown();
+                                                    artie.forward(unit * 8); 
+                                                    artie.penup();
+                                                    artie.back(unit*8);
+                                            } else if (symbol === "O") {
+                                                artie.penup(); artie.forward(unit * 8); artie.right(90); artie.forward(unit * 4); artie.right(14); artie.pendown();
+                                                pythag(2,0.5); artie.right(31);
+                                                for(step = 0; step < 3; step++){
+                                                    pythag(1.5,1.5); artie.right(31);
+                                                    pythag(2,0.5); artie.right(28);
+                                                    pythag(2,0.5); artie.right(31);
+                                                }
+                                                pythag(1.5,1.5); artie.right(30.5); pythag(2,0.5); 
+                                                artie.penup(); artie.left (76); artie.back(unit * 8); artie.right (90); artie.forward(unit * 5);
+                                            } else if (symbol === "S") {
+                                                    artie.penup(); 
+                                                    artie.forward(unit * 7);
+                                                    artie.right(90); 
+                                                    artie.forward(unit * 4); 
+                                                    artie.left(135); 
+                                                    artie.pendown();
+                                                    pythag(1,1);
+                                                    artie.penup(); artie.left(45); artie.pendown();
+                                                    artie.forward(unit * 2); 
+                                                    artie.penup(); artie.left(45); artie.pendown();
+                                                    pythag(1,1); 
+                                                    artie.penup(); artie.left(45); artie.pendown();
+                                                    artie.forward(unit * 2); 
+                                                    artie.penup(); artie.left(63.4); artie.pendown();
+                                                    pythag(2,4); 
+                                                    artie.penup();artie.right(63.4); artie.pendown();
+                                                    artie.forward(unit * 2); 
+                                                    artie.penup(); artie.right(45); artie.pendown();
+                                                    pythag(1,1); 
+                                                    artie.penup(); artie.right(45); artie.pendown();
+                                                    artie.forward(unit * 2); 
+                                                    artie.penup(); artie.right(45); artie.pendown();
+                                                    pythag(1,1); 
+                                                    artie.penup();
+                                                    pythag(1,1,rev);
+                                                    artie.right(45+90);
+                                                    artie.forward (unit *5);
+                                                    artie.left(90);
+                                                } else if (symbol === "Y") {
+                                                        artie.forward(unit * 8); 
+                                                        artie.left(90); 
+                                                        artie.left(126.9); 
+                                                        artie.pendown();
+                                                        pythag(4,3); 
+                                                        artie.right(36.9); 
+                                                        artie.forward(unit * 4);
+                                                        artie.penup(); 
+                                                        artie.back(unit * 4); 
+                                                        artie.left(143.1);
+                                                        artie.pendown(); 
+                                                        pythag(4,3); 
+                                                        artie.penup();
+                                                        artie.left(36.9); // PEN RESET
+                                                        artie.back(unit * 8);
+                                                } else if (symbol === " ") {
+                                                    artie.penup();  artie.right(90); artie.forward(unit * 5); artie.left(90);
+                                                } else console.log ("Symbol '" + res + "' not recognised.");
+                                        
+                            }
+ 
+// execute code
+
+artie.penup(); // to make room on the simulator
+artie.left (90);
+artie.forward(unit * 30);
+artie.right(90);
+artie.pendown();
+
+
+for (let i = 0, chr; i < str.length; i++) {
+	var res = str.charAt(i);
+	write(res);
+	artie.penup();  artie.right(90); artie.forward(unit * 1); artie.left(90); // letter gap 
+	}
+	
+//symbol = "a";	
+//write(symbol);	
