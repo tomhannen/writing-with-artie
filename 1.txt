@@ -292,11 +292,12 @@ function write(symbol) {
  
 // execute code
 
-artie.penup(); // to make room on the simulator
+/*artie.penup(); // to make room on the simulator
 artie.left (90);
 artie.forward(unit * 100);
 artie.right(90);
 artie.pendown();
+*/
 
 for (let i = 0, chr; i < str.length; i++) {
 	var res = str.charAt(i);
