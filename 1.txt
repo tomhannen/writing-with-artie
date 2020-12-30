@@ -1,9 +1,9 @@
-var unit = 20; 
+var unit = 4; 
 var step; 
 var rev = "reverse";
 var i;
 
-var str = "YOU"; /// string to write!
+var str = "I CAN WRITE ANYTHING"; /// string to write!
 var res;   // variable to hold single character of string
 var symbol;
 
@@ -216,48 +216,92 @@ function write(symbol) {
                                                                             artie.penup(); artie.right(90); artie.forward (unit * 3); artie.left(90); artie.pendown();
                                                                             artie.forward(unit * 8); artie.penup(); artie.left(90); artie.forward(unit *3); artie.pendown(); artie.back(unit * 6); 
                                                                             artie.penup(); artie.right(90); artie.back(unit * 8);
-                                                                                } else if (symbol === "Y") {
-                                                                                        artie.forward(unit * 7.9); 
+                                                                            } else if (symbol === "U") {
+                                                                                artie.penup(); artie.forward(unit * 8); artie.right(180); 
+                                                                                artie.pendown();
+                                                                                artie.forward(unit * 7); artie.left(45); pythag(1,1); 
+                                                                                artie.left(45); artie.forward(unit * 3); artie.left(45); 
+                                                                                pythag(1,1); artie.left(44); artie.forward(unit * 7); artie.penup();
+                                                                                artie.back(unit * 8);
+                                                                                } else if (symbol === "V") {
+                                                                                        artie.penup(); artie.forward(unit * 8); 
                                                                                         artie.left(90); 
-                                                                                        artie.left(126.9); 
-                                                                                        artie.pendown();
-                                                                                        pythag(4,3); 
-                                                                                        artie.right(36.9); 
-                                                                                        artie.forward(unit * 4);
-                                                                                        artie.penup(); 
-                                                                                        artie.back(unit * 4); 
-                                                                                        artie.left(143.1);
-                                                                                        artie.pendown(); 
-                                                                                        pythag(4,3); 
-                                                                                        artie.penup();
-                                                                                        artie.left(36.9); // PEN RESET
+                                                                                        artie.left(110.6); artie.pendown();
+                                                                                        pythag(3,8); artie.left(138.8); pythag(3,8); artie.penup();
+                                                                                        artie.left(20.6);
                                                                                         artie.back(unit * 8);
-                                                                                } else if (symbol === "U") {
-                                                                                    artie.penup(); artie.forward(unit * 8); artie.right(180); 
+                                                                                        } else if (symbol === "W") {
+                                                                                        artie.penup(); artie.forward(unit * 8); 
+                                                                                        artie.left(90); 
+                                                                                        artie.left(110.6); artie.pendown();
+                                                                                        pythag(3,8); artie.left(138.8); pythag(3,8); 
+                                                                                        artie.right(138.8); 
+                                                                                        pythag(3,8); artie.left(138.8); pythag(3,8);
+                                                                                        artie.penup();
+                                                                                        artie.left(20.6);
+                                                                                        artie.back(unit * 8);    
+                                                                                        } else if (symbol === "X") {
+                                                                                            artie.penup(); 
+                                                                                            artie.forward(unit * 8);
+                                                                                            artie.left(216.9);
+                                                                                            artie.pendown();
+                                                                                            pythag(8,6); 
+                                                                                            artie.penup(); 
+                                                                                            artie.left(143.1); 
+                                                                                            artie.forward(unit * 8); 
+                                                                                            artie.left(143.1);
+                                                                                            artie.pendown(); 
+                                                                                            pythag(8,6); 
+                                                                                            artie.penup();
+                                                                                            artie.right(143.1+90);
+                                                                                            artie.forward(unit *6);
+                                                                                            artie.left(90);
+                                                                                            } else if (symbol === "Y") {
+                                                                                    artie.forward(unit * 7.9); 
+                                                                                    artie.left(90); 
+                                                                                    artie.left(126.9); 
                                                                                     artie.pendown();
-                                                                                    artie.forward(unit * 7); artie.left(45); pythag(1,1); 
-                                                                                    artie.left(45); artie.forward(unit * 3); artie.left(45); 
-                                                                                    pythag(1,1); artie.left(44); artie.forward(unit * 7); artie.penup();
+                                                                                    pythag(4,3); 
+                                                                                    artie.right(36.9); 
+                                                                                    artie.forward(unit * 4);
+                                                                                    artie.penup(); 
+                                                                                    artie.back(unit * 4); 
+                                                                                    artie.left(143.1);
+                                                                                    artie.pendown(); 
+                                                                                    pythag(4,3); 
+                                                                                    artie.penup();
+                                                                                    artie.left(36.9); // PEN RESET
                                                                                     artie.back(unit * 8);
-                                                                                        } else if (symbol === " ") {
-                                                                                        artie.penup();  artie.right(90); artie.forward(unit * 5); artie.left(90);
-                                                                                    } else console.log ("Symbol '" + res + "' not recognised.");
-                                                                        
-                                                            }
+                                                                                    } else if (symbol === "Z") {
+                                                                                        artie.penup(); 
+                                                                                        artie.forward(unit * 8); 
+                                                                                        artie.right(90); 
+                                                                                        artie.pendown(); 
+                                                                                        artie.forward(unit * 5); 
+                                                                                        artie.right(122);
+                                                                                        pythag(5,8); 
+                                                                                        artie.left(122); 
+                                                                                        artie.forward(unit * 5); 
+                                                                                        artie.penup();
+                                                                                        artie.left(90);
+                                                                                        }else if (symbol === " ") {
+                                                                                    artie.penup();  artie.right(90); artie.forward(unit * 5); artie.left(90);
+                                                                                } else console.log ("Symbol '" + res + "' not recognised.");
+                                                                    
+                                                        }
  
 // execute code
 
-/*artie.penup(); // to make room on the simulator
+artie.penup(); // to make room on the simulator
 artie.left (90);
-artie.forward(unit * 30);
+artie.forward(unit * 100);
 artie.right(90);
 artie.pendown();
-*/
 
 for (let i = 0, chr; i < str.length; i++) {
 	var res = str.charAt(i);
 	write(res);
-	//artie.penup();  artie.right(90); artie.forward(unit * 1); artie.left(90); // letter gap 
+	artie.penup();  artie.right(90); artie.forward(unit * 1); artie.left(90); // letter gap 
 	}
 	
 //symbol = "a";	
