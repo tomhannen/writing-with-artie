@@ -5,14 +5,14 @@
 alt="youtube video showing Artie writing" width="500" border="10" /></a>
 
 Artie 3000 is a toy robot plotter. 
-You put a felt pen thorugh him, then thorugh a series of simple commands (penup, pendown, left (angle), forward (amount), you can program him to draw things.
+You put a felt pen through him, then using a series of simple commands (penup, pendown, left (angle), forward (amount), you can program him to draw things.
 The [codewithartie.com website has some examples of alphabet letters](https://codewithartie.com/downloads.html#UI-instructions), but they don't all terminate in the same position, making it difficult to write sentences with Artie.
 
 The code on here was tweaked from the examples on the site.
 
 ## To write your own sentence do the following
 
-Download 1.txt, and copy the text into Artie's Javascript editor.
+Download [1.txt](https://github.com/tomhannen/writing-with-artie/blob/main/1.txt), and copy the text into Artie's Javascript editor.
 
 Change the line:
 `var str = "I CAN WRITE ANYTHING"; /// string to write!`
